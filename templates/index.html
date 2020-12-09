@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <body style="background-color: #fcf0c2;">
+
+    <div class="container">
+        <div class="py-5 text-center">
+            {#            <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"#}
+            {#                 alt="" width="72" height="72">#}
+            {#            <h2>Checkout form</h2>#}
+            <p class="lead"></p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    {#                    <span class="text-muted">Your cart</span>#}
+                    {#                    <span class="badge badge-secondary badge-pill">3</span>#}
+                </h4>
+                <form class="p-2">
+                    <img class="d-block mx-auto mb-4"
+                         src="{% static 'img/timothylampung.jpg' %}"
+                         alt="" width="400" height="400">
+                </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h1 style="font-family: 'Reenie Beanie', cursive;
+                    font-size: 80px;
+                    " class="mb-3">Who is "Emang"?</h1>
+                <div class="row mt-5">
+                    <div style="font-family: 'Patrick Hand', cursive;" class="col-md-12 mb-3">
+                        <ol>
+                            <li class="h2"><h2>2014" Graduated from Labuan Matriculation Collage</h2></li>
+                            <li class="h2"><h2>2018" Graduated from Labuan University Putra Malaysia</h2></li>
+                            <li class="h2"><h2>2018" Joined <strong><a href="https://terang.asia/">Terang
+                                Academy</a></strong> as software developer intern</h2></li>
+                            <li class="h2"><h2>2019" Joined <strong><a href="https://canang.com.my/">Canang Technologies
+                                sdn. bhd.</a></strong> as software developer</h2></li>
+                            <li class="h2"><h2>2019" Joined <strong><a href="https://www.volumeresearch.net/">Volume
+                                Research & Development sdn. bhd.</a></strong> in software development, electronic and
+                                RPA</h2></li>
+                            <li class="h2"><h2>2020" Started & Developed <strong><a
+                                    href="https://foodsterking.com/about/">Foodsterking</a></strong></h2></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2020 Timothy Lampung</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/timothy.lampung">Facebook</a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/timothylampung/?hl=en">Instagram</a></li>
+                <li class="list-inline-item"><a href="https://github.com/timothylampung">GitHub</a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCH_OJDkXnWzWz95wUEoLcCQ">Youtube</a></li>
+                <li class="list-inline-item"><a href="#">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    </body>
+{% endblock %}
